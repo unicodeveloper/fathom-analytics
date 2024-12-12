@@ -1,5 +1,3 @@
 FROM usefathom/fathom:latest
 
-EXPOSE 8080
-
-CMD ["./fathom", "server"]
+CMD ["./fathom", "--config=/etc/secrets/fathom.env", "server"]
